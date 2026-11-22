@@ -1,3 +1,5 @@
+# Home Lab
+
 A from-scratch home lab built on Proxmox VE and modeled on Microsoft Azure's hub-and-spoke network design. An OPNsense firewall plays the hub, with segmented VLANs as spokes for management, servers and clients. On top of that the lab runs an Active Directory domain, a Linux server, a Wazuh SIEM with attack testing, and a hybrid link to Azure. Each phase is documented below with what I built, the commands I ran, redacted screenshots, and every problem I hit and how I fixed it. The lab supports my B.S. in Cloud and Network Engineering (Azure).
 
 ## Phases

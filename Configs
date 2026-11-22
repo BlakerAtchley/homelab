@@ -1,0 +1,3 @@
+# Configs
+
+Sanitized config files and scripts. Replace passwords, keys and real public addresses with placeholders such as `<password>` before committing.

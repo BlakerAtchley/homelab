@@ -1,0 +1,120 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" width="1600" height="1420" viewBox="0 0 1600 1420"><title>Home lab network wiring and VLANs</title><path fill="#f5f6f8" d="M0 0h1600v1420H0z"/>
+<path fill="none" stroke="#6b7480" stroke-dasharray="6px, 6px" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M480 284h159"/>
+<path fill="none" stroke="#6b7480" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M800 328v79m0 73v79m240 53h159"/>
+<path fill="none" stroke="#6b7480" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M800 664v68m-440 0h880"/>
+<path fill="none" stroke="#6b7480" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M360 732v67m440-67v67m440-67v67"/>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="13" font-weight="400"><tspan xml:space="preserve" x="64" y="79" lengthAdjust="spacingAndGlyphs" textLength="221.7">HOME LAB · DRAWING 2 OF 4</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="700"><tspan xml:space="preserve" x="64" y="136" lengthAdjust="spacingAndGlyphs" textLength="481.1">Network wiring + VLANs</tspan></text>
+<text fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="400"><tspan xml:space="preserve" x="64" y="167" lengthAdjust="spacingAndGlyphs" textLength="1028.1">Every physical cable in the lab. Each host has one network port, so it runs as a trunk: the switch carries all six lab VLANs to both </tspan><tspan xml:space="preserve" x="64" y="193" lengthAdjust="spacingAndGlyphs" textLength="429.1">hosts, and OPNsense on pve01 routes between them.</tspan></text>
+<rect width="356" height="185" x="1180" y="64" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<g dominant-baseline="text-after-edge"><text fill="#5b6573" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="700"><tspan xml:space="preserve" x="1197" y="98" lengthAdjust="spacingAndGlyphs" textLength="119.2">SWITCH PORT MAP</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700"><tspan xml:space="preserve" x="1197" y="121" lengthAdjust="spacingAndGlyphs" textLength="5.6">1</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="1202.6" y="121" lengthAdjust="spacingAndGlyphs" textLength="231.1"> · Home router (home LAN, untagged)</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700"><tspan xml:space="preserve" x="1197" y="143" lengthAdjust="spacingAndGlyphs" textLength="8.2">2</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="1205.2" y="143" lengthAdjust="spacingAndGlyphs" textLength="158.3"> · pve01 (trunk, all VLANs)</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700"><tspan xml:space="preserve" x="1197" y="165" lengthAdjust="spacingAndGlyphs" textLength="8.4">3</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="1205.4" y="165" lengthAdjust="spacingAndGlyphs" textLength="160.9"> · pve02 (trunk, all VLANs)</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700"><tspan xml:space="preserve" x="1197" y="187" lengthAdjust="spacingAndGlyphs" textLength="8.8">4</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="1205.8" y="187" lengthAdjust="spacingAndGlyphs" textLength="166.9"> · NZXT PC (VLAN 31, later)</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700"><tspan xml:space="preserve" x="1197" y="209" lengthAdjust="spacingAndGlyphs" textLength="8.3">5</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="1205.3" y="209" lengthAdjust="spacingAndGlyphs" textLength="154.6"> · Admin laptop (VLAN 11)</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700"><tspan xml:space="preserve" x="1197" y="231" lengthAdjust="spacingAndGlyphs" textLength="23.4">6–8</tspan></text>
+<text fill="#18202b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="1220.4" y="231" lengthAdjust="spacingAndGlyphs" textLength="47"> · Spare</tspan></text>
+</g>
+<rect width="320" height="88" x="160" y="240" fill="#fff" stroke="#9aa4b2" stroke-dasharray="1" stroke-width="2" rx="12" ry="12"/>
+<g dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15"><text fill="#18202b" font-weight="700"><tspan xml:space="preserve" x="261.2" y="272.5" lengthAdjust="spacingAndGlyphs" textLength="117.6">Microsoft Azure</tspan></text>
+<g fill="#4a5462" font-weight="400"><text><tspan xml:space="preserve" x="210.1" y="293.5" lengthAdjust="spacingAndGlyphs" textLength="219.8">Phase 7: Arc, Entra cloud sync,</tspan></text>
+<text><tspan xml:space="preserve" x="245.7" y="314.5" lengthAdjust="spacingAndGlyphs" textLength="148.5">site-to-site VPN later</tspan></text>
+</g>
+</g>
+<rect width="320" height="88" x="640" y="240" fill="#fff" stroke="#c9cfd8" rx="12" ry="12"/>
+<g dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15"><text fill="#18202b" font-weight="700"><tspan xml:space="preserve" x="707.7" y="283" lengthAdjust="spacingAndGlyphs" textLength="184.6">ISP modem / home router</tspan></text>
+<text fill="#4a5462" font-weight="400"><tspan xml:space="preserve" x="705.8" y="304" lengthAdjust="spacingAndGlyphs" textLength="188.5">Stays the internet gateway</tspan></text>
+</g>
+<rect width="400" height="72" x="600" y="408" fill="#2a2f36" rx="10" ry="10"/>
+<g dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15"><text fill="#f5f6f8" font-weight="700"><tspan xml:space="preserve" x="742" y="443" lengthAdjust="spacingAndGlyphs" textLength="86">Patch panel</tspan></text>
+<text fill="#f5f6f8" font-weight="400"><tspan xml:space="preserve" x="828" y="443" lengthAdjust="spacingAndGlyphs" textLength="30"> · U1</tspan></text>
+<text fill="#c9d0da" font-weight="400"><tspan xml:space="preserve" x="721.4" y="464" lengthAdjust="spacingAndGlyphs" textLength="157.2">12-port Cat6 keystone</tspan></text>
+</g>
+<rect width="480" height="104" x="560" y="560" fill="#2a2f36" rx="10" ry="10"/>
+<g dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15"><text fill="#f5f6f8" font-weight="700"><tspan xml:space="preserve" x="695" y="600.5" lengthAdjust="spacingAndGlyphs" textLength="176.8">TP-Link Omada SG2008</tspan></text>
+<text fill="#f5f6f8" font-weight="400"><tspan xml:space="preserve" x="871.8" y="600.5" lengthAdjust="spacingAndGlyphs" textLength="33.2"> · U3</tspan></text>
+<g fill="#c9d0da" font-weight="400"><text><tspan xml:space="preserve" x="681.7" y="621.5" lengthAdjust="spacingAndGlyphs" textLength="236.6">802.1Q VLANs 11, 12, 13, 21, 31, 41</tspan></text>
+<text><tspan xml:space="preserve" x="720" y="642.5" lengthAdjust="spacingAndGlyphs" textLength="159.9">+ home LAN untagged</tspan></text>
+</g>
+</g>
+<rect width="320" height="80" x="1200" y="572" fill="#fff" stroke="#c9cfd8" rx="12" ry="12"/>
+<g dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15"><text fill="#18202b" font-weight="700"><tspan xml:space="preserve" x="1286.6" y="611" lengthAdjust="spacingAndGlyphs" textLength="146.7">ASUS ROG Strix G16</tspan></text>
+<text fill="#4a5462" font-weight="400"><tspan xml:space="preserve" x="1258.9" y="632" lengthAdjust="spacingAndGlyphs" textLength="202.1">Admin: Proxmox UI, SSH, Git</tspan></text>
+</g>
+<rect width="400" height="320" x="160" y="800" fill="#fff" stroke="#1f5fd6" stroke-width="2" rx="12" ry="12"/>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700"><tspan xml:space="preserve" x="182" y="847" lengthAdjust="spacingAndGlyphs" textLength="160.6">pve01 · HUB HOST</tspan></text>
+<text fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="182" y="877" lengthAdjust="spacingAndGlyphs" textLength="257.8">Lenovo M920q #1 · Proxmox VE · U5</tspan></text>
+<rect width="26.5" height="18" x="182" y="890" fill="#18202b" rx="4" ry="4"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="600"><tspan xml:space="preserve" x="188" y="906" lengthAdjust="spacingAndGlyphs" textLength="14.5">GW</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="208.5" y="907" lengthAdjust="spacingAndGlyphs" textLength="316.6"> afw-hub · OPNsense, gateway for all VLANs</tspan></text>
+<rect width="26.5" height="18" x="182" y="921" fill="#e3ecfb" rx="4" ry="4"/>
+<text fill="#1a4fb3" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="600"><tspan xml:space="preserve" x="188" y="937" lengthAdjust="spacingAndGlyphs" textLength="14.5">11</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="208.5" y="938" lengthAdjust="spacingAndGlyphs" textLength="262.5"> vm-bastion01 · Guacamole jump box</tspan></text>
+<rect width="26.5" height="18" x="182" y="952" fill="#ddf3f7" rx="4" ry="4"/>
+<text fill="#0b5f75" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="600"><tspan xml:space="preserve" x="188" y="968" lengthAdjust="spacingAndGlyphs" textLength="14.5">12</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="208.5" y="969" lengthAdjust="spacingAndGlyphs" textLength="174.7"> vm-dc01 · AD DS + DNS</tspan></text>
+<rect width="26.5" height="18" x="182" y="983" fill="#eee9fb" rx="4" ry="4"/>
+<text fill="#5a3bb0" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="600"><tspan xml:space="preserve" x="188" y="999" lengthAdjust="spacingAndGlyphs" textLength="14.5">13</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="208.5" y="1000" lengthAdjust="spacingAndGlyphs" textLength="196.6"> vm-wazuh01 · Wazuh SIEM</tspan></text>
+<text fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="182" y="1031" lengthAdjust="spacingAndGlyphs" textLength="257.5">UPS USB plugs in here (NUT server)</tspan></text>
+<rect width="400" height="320" x="600" y="800" fill="#fff" stroke="#1e7f4f" stroke-width="2" rx="12" ry="12"/>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700"><tspan xml:space="preserve" x="622" y="847" lengthAdjust="spacingAndGlyphs" textLength="186.8">pve02 · SPOKE HOST</tspan></text>
+<text fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="622" y="877" lengthAdjust="spacingAndGlyphs" textLength="260.2">Lenovo M920q #2 · Proxmox VE · U7</tspan></text>
+<rect width="26.5" height="18" x="622" y="890" fill="#e1f4ea" rx="4" ry="4"/>
+<text fill="#176640" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="600"><tspan xml:space="preserve" x="628" y="906" lengthAdjust="spacingAndGlyphs" textLength="14.5">21</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="648.5" y="907" lengthAdjust="spacingAndGlyphs" textLength="194.6"> Linux app server (Phase 5)</tspan></text>
+<rect width="26.5" height="18" x="622" y="921" fill="#fbefd9" rx="4" ry="4"/>
+<text fill="#84480a" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="600"><tspan xml:space="preserve" x="628" y="937" lengthAdjust="spacingAndGlyphs" textLength="14.5">31</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="648.5" y="938" lengthAdjust="spacingAndGlyphs" textLength="185"> Windows 11 domain client</tspan></text>
+<rect width="26.5" height="18" x="622" y="952" fill="#fce7e6" rx="4" ry="4"/>
+<text fill="#9a1c13" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="600"><tspan xml:space="preserve" x="628" y="968" lengthAdjust="spacingAndGlyphs" textLength="14.5">41</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="648.5" y="969" lengthAdjust="spacingAndGlyphs" textLength="165.1"> Red team box, isolated</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><text><tspan xml:space="preserve" x="622" y="1000" lengthAdjust="spacingAndGlyphs" textLength="248.8">Clustered with pve01: one Proxmox</tspan></text>
+<text><tspan xml:space="preserve" x="622" y="1030" lengthAdjust="spacingAndGlyphs" textLength="276.3">datacenter, like one Azure subscription</tspan></text>
+</g>
+<rect width="400" height="320" x="1040" y="800" fill="#fff" stroke="#c9cfd8" rx="12" ry="12"/>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700"><tspan xml:space="preserve" x="1061" y="846" lengthAdjust="spacingAndGlyphs" textLength="211.5">NZXT PC · AT THE DESK</tspan></text>
+<text fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="1061" y="876" lengthAdjust="spacingAndGlyphs" textLength="288.1">Windows 11 Pro + Hyper-V · RTX 4070 Ti</tspan></text>
+<rect width="26.5" height="18" x="1061" y="889" fill="#e6e9ee" rx="4" ry="4"/>
+<text fill="#3a4350" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="600"><tspan xml:space="preserve" x="1067" y="905" lengthAdjust="spacingAndGlyphs" textLength="14.5">P0</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="1087.5" y="906" lengthAdjust="spacingAndGlyphs" textLength="279.9"> Windows Server eval VM (AD practice)</tspan></text>
+<rect width="26.5" height="18" x="1061" y="920" fill="#fbefd9" rx="4" ry="4"/>
+<text fill="#84480a" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="600"><tspan xml:space="preserve" x="1067" y="936" lengthAdjust="spacingAndGlyphs" textLength="14.5">31</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="1087.5" y="937" lengthAdjust="spacingAndGlyphs" textLength="238.1"> Later: domain-joined workstation</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><text><tspan xml:space="preserve" x="1061" y="968" lengthAdjust="spacingAndGlyphs" textLength="275.8">Gaming stays on the host OS. Lab VMs</tspan></text>
+<text><tspan xml:space="preserve" x="1061" y="998" lengthAdjust="spacingAndGlyphs" textLength="208.4">run only when it isn&apos;t gaming.</tspan></text>
+</g>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="536.4" y="272" lengthAdjust="spacingAndGlyphs" textLength="47.2">internet</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="812" y="375" lengthAdjust="spacingAndGlyphs" textLength="72.3">patch port 1</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="812" y="528" lengthAdjust="spacingAndGlyphs" textLength="152.9">switch port 1 · home LAN</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="1071.5" y="600" lengthAdjust="spacingAndGlyphs" textLength="97">port 5 · VLAN 11</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="372" y="773" lengthAdjust="spacingAndGlyphs" textLength="79.4">port 2 · trunk</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="812" y="773" lengthAdjust="spacingAndGlyphs" textLength="79.5">port 3 · trunk</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="400"><tspan xml:space="preserve" x="1252" y="773" lengthAdjust="spacingAndGlyphs" textLength="140.5">port 4 · VLAN 31 (later)</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="160" y="1190" lengthAdjust="spacingAndGlyphs" textLength="365.5">LAB VLANS · PROXMOX SDN ZONE zone-lab ON vmbr1</tspan></text>
+<rect width="197.9" height="33" x="160" y="1204" fill="#e3ecfb" rx="8" ry="8"/>
+<text fill="#1a4fb3" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700"><tspan xml:space="preserve" x="172" y="1229" lengthAdjust="spacingAndGlyphs" textLength="12.1">11</tspan></text>
+<text fill="#1a4fb3" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><tspan xml:space="preserve" x="184.1" y="1229" lengthAdjust="spacingAndGlyphs" textLength="161.8"> snet-management · hub</tspan></text>
+<rect width="163.5" height="33" x="369.9" y="1204" fill="#ddf3f7" rx="8" ry="8"/>
+<text fill="#0b5f75" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700"><tspan xml:space="preserve" x="381.9" y="1229" lengthAdjust="spacingAndGlyphs" textLength="14.9">12</tspan></text>
+<text fill="#0b5f75" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><tspan xml:space="preserve" x="396.8" y="1229" lengthAdjust="spacingAndGlyphs" textLength="124.6"> snet-identity · hub</tspan></text>
+<rect width="168.1" height="33" x="545.4" y="1204" fill="#eee9fb" rx="8" ry="8"/>
+<text fill="#5a3bb0" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700"><tspan xml:space="preserve" x="557.4" y="1229" lengthAdjust="spacingAndGlyphs" textLength="15.1">13</tspan></text>
+<text fill="#5a3bb0" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><tspan xml:space="preserve" x="572.5" y="1229" lengthAdjust="spacingAndGlyphs" textLength="129"> snet-security · hub</tspan></text>
+<rect width="154.2" height="33" x="725.5" y="1204" fill="#e1f4ea" rx="8" ry="8"/>
+<text fill="#176640" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700"><tspan xml:space="preserve" x="737.5" y="1229" lengthAdjust="spacingAndGlyphs" textLength="14.9">21</tspan></text>
+<text fill="#176640" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><tspan xml:space="preserve" x="752.3" y="1229" lengthAdjust="spacingAndGlyphs" textLength="115.3"> snet-app · spoke</tspan></text>
+<rect width="165.9" height="33" x="891.6" y="1204" fill="#fbefd9" rx="8" ry="8"/>
+<text fill="#84480a" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700"><tspan xml:space="preserve" x="903.6" y="1229" lengthAdjust="spacingAndGlyphs" textLength="15.1">31</tspan></text>
+<text fill="#84480a" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><tspan xml:space="preserve" x="918.7" y="1229" lengthAdjust="spacingAndGlyphs" textLength="126.8"> snet-users · spoke</tspan></text>
+<rect width="184.1" height="33" x="1069.5" y="1204" fill="#fce7e6" rx="8" ry="8"/>
+<text fill="#9a1c13" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700"><tspan xml:space="preserve" x="1081.5" y="1229" lengthAdjust="spacingAndGlyphs" textLength="15">41</tspan></text>
+<text fill="#9a1c13" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><tspan xml:space="preserve" x="1096.5" y="1229" lengthAdjust="spacingAndGlyphs" textLength="145.2"> snet-redteam · spoke</tspan></text>
+<text fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="400"><tspan xml:space="preserve" x="160" y="1289" lengthAdjust="spacingAndGlyphs" textLength="1260.6">Every VLAN&apos;s gateway is afw-hub on pve01. Spokes reach each other only through the hub firewall (default deny), the same way Azure spokes route through Azure Firewall in the </tspan><tspan xml:space="preserve" x="160" y="1312" lengthAdjust="spacingAndGlyphs" textLength="646.4">hub. The lab uses 10.10.0.0/16 to 10.40.0.0/16 so it never overlaps the Azure address space.</tspan></text>
+</svg>

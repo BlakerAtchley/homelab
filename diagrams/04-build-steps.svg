@@ -1,0 +1,93 @@
+<svg role="img" xmlns="http://www.w3.org/2000/svg" width="1440" height="1180" viewBox="0 0 1440 1180"><title>Home lab build steps</title><path fill="#f5f6f8" d="M0 0h1440v1180H0z"/>
+<g dominant-baseline="text-after-edge"><text fill="#5b6573" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="13" font-weight="400"><tspan xml:space="preserve" x="64" y="79" lengthAdjust="spacingAndGlyphs" textLength="221.7">HOME LAB · DRAWING 4 OF 4</tspan></text>
+<text fill="#18202b" aria-level="1" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="700"><tspan xml:space="preserve" x="64" y="135" lengthAdjust="spacingAndGlyphs" textLength="387.8">Build steps, in order</tspan></text>
+<text fill="#4a5462" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="400"><tspan xml:space="preserve" x="64" y="166" lengthAdjust="spacingAndGlyphs" textLength="1098.2">Steps 1–6 are the physical build, about one afternoon. Steps 7–9 line up with Phases 2, 3 and 1 of the build plan. Photos are taken at each </tspan><tspan xml:space="preserve" x="64" y="192" lengthAdjust="spacingAndGlyphs" textLength="179.1">step for the write-ups.</tspan></text>
+</g>
+<rect width="421.3" height="272" x="64" y="227" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<rect width="36" height="36" x="87" y="250" fill="#18202b" rx="18" ry="18"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700"><tspan xml:space="preserve" x="101.5" y="278" lengthAdjust="spacingAndGlyphs" textLength="6.9">1</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="135" y="275" lengthAdjust="spacingAndGlyphs" textLength="95.3">ON THE BENCH</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600"><tspan xml:space="preserve" x="87" y="319" lengthAdjust="spacingAndGlyphs" textLength="170.2">Prep both M920qs</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><text><tspan xml:space="preserve" x="105" y="347" lengthAdjust="spacingAndGlyphs" textLength="344.4">• Confirm 32 GB RAM and the 90 W adapter in each </tspan><tspan xml:space="preserve" x="105" y="367" lengthAdjust="spacingAndGlyphs" textLength="28.3">box.</tspan></text>
+<text><tspan xml:space="preserve" x="105" y="391" lengthAdjust="spacingAndGlyphs" textLength="313.9">• Fit the 2 TB NVMe (bottom panel, one screw).</tspan></text>
+<text><tspan xml:space="preserve" x="105" y="415" lengthAdjust="spacingAndGlyphs" textLength="327.5">• BIOS: update it, enable VT-x and VT-d, set After </tspan><tspan xml:space="preserve" x="105" y="435" lengthAdjust="spacingAndGlyphs" textLength="161.2">power loss to Power On.</tspan></text>
+<text><tspan xml:space="preserve" x="105" y="459" lengthAdjust="spacingAndGlyphs" textLength="205.5">• Label them pve01 and pve02.</tspan></text>
+</g>
+<rect width="421.3" height="272" x="509.3" y="227" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<rect width="36" height="36" x="532.3" y="250" fill="#18202b" rx="18" ry="18"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700"><tspan xml:space="preserve" x="545.3" y="278" lengthAdjust="spacingAndGlyphs" textLength="10.1">2</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="580.3" y="275" lengthAdjust="spacingAndGlyphs" textLength="31.8">RACK</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600"><tspan xml:space="preserve" x="532.3" y="319" lengthAdjust="spacingAndGlyphs" textLength="222.8">Assemble the DeskPi T2</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><text><tspan xml:space="preserve" x="550.3" y="347" lengthAdjust="spacingAndGlyphs" textLength="340.5">• Build the frame from its manual; leave side panels </tspan><tspan xml:space="preserve" x="550.3" y="367" lengthAdjust="spacingAndGlyphs" textLength="75.4">off for now.</tspan></text>
+<text><tspan xml:space="preserve" x="550.3" y="391" lengthAdjust="spacingAndGlyphs" textLength="341.3">• Set it on a sturdy desk or stand near an outlet and </tspan><tspan xml:space="preserve" x="550.3" y="411" lengthAdjust="spacingAndGlyphs" textLength="146">the router&apos;s cable run.</tspan></text>
+<text><tspan xml:space="preserve" x="550.3" y="435" lengthAdjust="spacingAndGlyphs" textLength="231.7">• Keep about 10 cm clear behind it.</tspan></text>
+</g>
+<rect width="421.3" height="272" x="954.7" y="227" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<rect width="36" height="36" x="977.7" y="250" fill="#18202b" rx="18" ry="18"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700"><tspan xml:space="preserve" x="990.5" y="278" lengthAdjust="spacingAndGlyphs" textLength="10.3">3</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="1025.7" y="275" lengthAdjust="spacingAndGlyphs" textLength="31.8">RACK</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600"><tspan xml:space="preserve" x="977.7" y="319" lengthAdjust="spacingAndGlyphs" textLength="240">Mount panels and shelves</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><text><tspan xml:space="preserve" x="995.7" y="347" lengthAdjust="spacingAndGlyphs" textLength="287.9">• U1 patch panel, U2 cable bar + half blank.</tspan></text>
+<text><tspan xml:space="preserve" x="995.7" y="371" lengthAdjust="spacingAndGlyphs" textLength="201.5">• 1U shelves at U3, U5 and U7.</tspan></text>
+<text><tspan xml:space="preserve" x="995.7" y="395" lengthAdjust="spacingAndGlyphs" textLength="334.9">• Vented blanks at U4, U6, U8; leave U9–U11 open.</tspan></text>
+<text><tspan xml:space="preserve" x="995.7" y="419" lengthAdjust="spacingAndGlyphs" textLength="214.6">• PDU at U12, cord out the back.</tspan></text>
+</g>
+<rect width="421.3" height="272" x="64" y="523" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<rect width="36" height="36" x="87" y="546" fill="#18202b" rx="18" ry="18"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700"><tspan xml:space="preserve" x="99.6" y="574" lengthAdjust="spacingAndGlyphs" textLength="10.8">4</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="135" y="571" lengthAdjust="spacingAndGlyphs" textLength="31.8">RACK</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600"><tspan xml:space="preserve" x="87" y="615" lengthAdjust="spacingAndGlyphs" textLength="167.3">Seat the hardware</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><text><tspan xml:space="preserve" x="105" y="643" lengthAdjust="spacingAndGlyphs" textLength="344.7">• Switch on the U3 shelf, pve01 on U5, pve02 on U7.</tspan></text>
+<text><tspan xml:space="preserve" x="105" y="667" lengthAdjust="spacingAndGlyphs" textLength="349.2">• Strap each down with Velcro, power buttons facing </tspan><tspan xml:space="preserve" x="105" y="687" lengthAdjust="spacingAndGlyphs" textLength="35.5">front.</tspan></text>
+<text><tspan xml:space="preserve" x="105" y="711" lengthAdjust="spacingAndGlyphs" textLength="309.6">• Tuck each 90 W power brick behind its shelf.</tspan></text>
+</g>
+<rect width="421.3" height="272" x="509.3" y="523" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<rect width="36" height="36" x="532.3" y="546" fill="#c2570c" rx="18" ry="18"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700"><tspan xml:space="preserve" x="545.2" y="574" lengthAdjust="spacingAndGlyphs" textLength="10.2">5</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="580.3" y="571" lengthAdjust="spacingAndGlyphs" textLength="135.1">POWER · DRAWING 3</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600"><tspan xml:space="preserve" x="532.3" y="615" lengthAdjust="spacingAndGlyphs" textLength="139.5">Wire the power</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><text><tspan xml:space="preserve" x="550.3" y="643" lengthAdjust="spacingAndGlyphs" textLength="346.3">• UPS on the floor beside the rack; charge it 8 hours </tspan><tspan xml:space="preserve" x="550.3" y="663" lengthAdjust="spacingAndGlyphs" textLength="29.9">first.</tspan></text>
+<text><tspan xml:space="preserve" x="550.3" y="687" lengthAdjust="spacingAndGlyphs" textLength="287.5">• PDU and modem into UPS battery outlets.</tspan></text>
+<text><tspan xml:space="preserve" x="550.3" y="711" lengthAdjust="spacingAndGlyphs" textLength="290.7">• pve01, pve02 and the switch into the PDU.</tspan></text>
+<text><tspan xml:space="preserve" x="550.3" y="735" lengthAdjust="spacingAndGlyphs" textLength="176">• UPS USB cable to pve01.</tspan></text>
+</g>
+<rect width="421.3" height="272" x="954.7" y="523" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<rect width="36" height="36" x="977.7" y="546" fill="#1f5fd6" rx="18" ry="18"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700"><tspan xml:space="preserve" x="990.5" y="574" lengthAdjust="spacingAndGlyphs" textLength="10.4">6</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="1025.7" y="571" lengthAdjust="spacingAndGlyphs" textLength="151">NETWORK · DRAWING 2</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600"><tspan xml:space="preserve" x="977.7" y="615" lengthAdjust="spacingAndGlyphs" textLength="216.1">Run the network cables</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><text><tspan xml:space="preserve" x="995.7" y="643" lengthAdjust="spacingAndGlyphs" textLength="220.4">• Label both ends of every cable.</tspan></text>
+<text><tspan xml:space="preserve" x="995.7" y="667" lengthAdjust="spacingAndGlyphs" textLength="232.2">• Router → patch 1 → switch port 1.</tspan></text>
+<text><tspan xml:space="preserve" x="995.7" y="691" lengthAdjust="spacingAndGlyphs" textLength="225.1">• pve01 → port 2, pve02 → port 3.</tspan></text>
+<text><tspan xml:space="preserve" x="995.7" y="715" lengthAdjust="spacingAndGlyphs" textLength="284.4">• Laptop → port 5; NZXT PC → port 4 later.</tspan></text>
+</g>
+<rect width="421.3" height="272" x="64" y="819" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<rect width="36" height="36" x="87" y="842" fill="#1e7f4f" rx="18" ry="18"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700"><tspan xml:space="preserve" x="100.3" y="870" lengthAdjust="spacingAndGlyphs" textLength="9.3">7</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="135" y="867" lengthAdjust="spacingAndGlyphs" textLength="55.6">PHASE 2</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600"><tspan xml:space="preserve" x="87" y="911" lengthAdjust="spacingAndGlyphs" textLength="170.3">Install Proxmox VE</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><text><tspan xml:space="preserve" x="105" y="939" lengthAdjust="spacingAndGlyphs" textLength="305.3">• Boot the USB installer on pve01, then pve02.</tspan></text>
+<text><tspan xml:space="preserve" x="105" y="963" lengthAdjust="spacingAndGlyphs" textLength="268.7">• Give each a static IP on the home LAN.</tspan></text>
+<text><tspan xml:space="preserve" x="105" y="987" lengthAdjust="spacingAndGlyphs" textLength="345.5">• Join them into one cluster. Two nodes need a third </tspan><tspan xml:space="preserve" x="105" y="1007" lengthAdjust="spacingAndGlyphs" textLength="146.7">vote (a QDevice) later.</tspan></text>
+<text><tspan xml:space="preserve" x="105" y="1031" lengthAdjust="spacingAndGlyphs" textLength="181.2">• Set up NUT with the UPS.</tspan></text>
+</g>
+<rect width="421.3" height="272" x="509.3" y="819" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<rect width="36" height="36" x="532.3" y="842" fill="#1e7f4f" rx="18" ry="18"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700"><tspan xml:space="preserve" x="545.1" y="870" lengthAdjust="spacingAndGlyphs" textLength="10.4">8</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="580.3" y="867" lengthAdjust="spacingAndGlyphs" textLength="55.6">PHASE 3</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600"><tspan xml:space="preserve" x="532.3" y="911" lengthAdjust="spacingAndGlyphs" textLength="226.4">Set up the switch VLANs</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><text><tspan xml:space="preserve" x="550.3" y="939" lengthAdjust="spacingAndGlyphs" textLength="275.3">• Give the switch a static management IP.</tspan></text>
+<text><tspan xml:space="preserve" x="550.3" y="963" lengthAdjust="spacingAndGlyphs" textLength="260.1">• Create VLANs 11, 12, 13, 21, 31 and 41.</tspan></text>
+<text><tspan xml:space="preserve" x="550.3" y="987" lengthAdjust="spacingAndGlyphs" textLength="340.3">• Ports 2–3: tagged for all six, home LAN untagged.</tspan></text>
+<text><tspan xml:space="preserve" x="550.3" y="1011" lengthAdjust="spacingAndGlyphs" textLength="305.5">• Port 5: access VLAN 11. Then build afw-hub.</tspan></text>
+</g>
+<rect width="421.3" height="272" x="954.7" y="819" fill="#fff" stroke="#d7dce3" rx="12" ry="12"/>
+<rect width="36" height="36" x="977.7" y="842" fill="#18202b" rx="18" ry="18"/>
+<text fill="#fff" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700"><tspan xml:space="preserve" x="990.5" y="870" lengthAdjust="spacingAndGlyphs" textLength="10.4">9</tspan></text>
+<text fill="#5b6573" dominant-baseline="text-after-edge" font-family="&quot;JetBrains Mono&quot;, monospace" font-size="12" font-weight="400"><tspan xml:space="preserve" x="1025.7" y="867" lengthAdjust="spacingAndGlyphs" textLength="127.1">PHASE 1 WRITE-UP</tspan></text>
+<text fill="#18202b" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="600"><tspan xml:space="preserve" x="977.7" y="911" lengthAdjust="spacingAndGlyphs" textLength="207.5">Document it on GitHub</tspan></text>
+<g fill="#4a5462" dominant-baseline="text-after-edge" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400"><text><tspan xml:space="preserve" x="995.7" y="939" lengthAdjust="spacingAndGlyphs" textLength="339.5">• Photo the front and back; blur serial numbers and </tspan><tspan xml:space="preserve" x="995.7" y="959" lengthAdjust="spacingAndGlyphs" textLength="96">any public IPs.</tspan></text>
+<text><tspan xml:space="preserve" x="995.7" y="983" lengthAdjust="spacingAndGlyphs" textLength="218.8">• Add the drawings to diagrams/.</tspan></text>
+<text><tspan xml:space="preserve" x="995.7" y="1007" lengthAdjust="spacingAndGlyphs" textLength="277.1">• Write docs/01-hardware.md and push it.</tspan></text>
+</g>
+</svg>
